@@ -1,10 +1,10 @@
 import spacy
 
 # Load your trained span-based model
-nlp = spacy.load("models/cs-acad_spancat")  # adjust path if needed
+nlp = spacy.load("cs-acad_ner/models/cs-acad_spancat")  # adjust path if needed
 
 # Test input
-text = "INTELLIGENT STUDY COMPANION: A CHATBOT SYSTEM FOR COMPUTER SCIENCE STUDENTS USING NATURAL LANGUAGE PROCESSING\n\nUndergraduate Thesis\nSubmitted to the Faculty of the\nDepartment of Computer Studies\nCavite State University - Imus Campus\n\nCity of Imus, Cavite\n\nIn partial fulfilment\nof the requirements for the degree\n\nBachelor of Science in Computer Science\n\nJULIAN D. MENDOZA\nKATRINA L. DELA CRUZ\nMIGUEL A. SANTOS\nMarch 2025"
+text = "VISLIGHT: LEVERAGING INTELLIGENT TRAFFIC LIGHT SENSORS TO MITIGATE URBAN CONGESTION DURING RUSH HOURS\n\nUndergraduate Thesis\nSubmitted to the Faculty of the\nDepartment of Computer Studies\nCavite State University - Imus Campus\n\nCity of Imus, Cavite\n\nIn partial fulfilment\nof the requirements for the degree\n\nBachelor of Science in Computer Science\n\nJULIAN D. MENDOZA\nKATRINA L. DELA CRUZ\nMIGUEL A. SANTOS\nMarch 2025"
 
 doc = nlp(text)
 

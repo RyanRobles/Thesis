@@ -49,6 +49,13 @@ def resolve_overlaps(spans):
     filtered.append((prev_start, prev_end, prev_label))
     return filtered
 
+def compute_tp_fp_fn(predicted, gold):
+    """Compute true positives, false positives, and false negatives"""
+    tp = set(predicted) & set(gold)
+    fp = set(predicted) - set(gold)
+    fn = set(gold) - set(predicted)
+    return tp, fp, fn
+
 def evaluate_span_model(model_path, data_path, spans_key="sc"):
     """
     Evaluate a span-based NER model
@@ -75,6 +82,10 @@ def evaluate_span_model(model_path, data_path, spans_key="sc"):
     # 4. Process examples
     examples = []
     skipped = 0
+    all_tp = set()
+    all_fp = set()
+    all_fn = set()
+
     for item in raw_data:
         text = preprocess_text(item["text"])
         
@@ -114,6 +125,23 @@ def evaluate_span_model(model_path, data_path, spans_key="sc"):
             example = Example.from_dict(doc, {"spans": aligned_span_data})
             examples.append(example)
 
+            # Predict using the model
+            pred_doc = nlp(text)
+            pred_spans = [
+                (span.start_char, span.end_char, span.label_)
+                for span in pred_doc.spans.get(spans_key, [])
+            ]
+
+            gold_spans = [
+                (span.start_char, span.end_char, span.label_)
+                for span in aligned_spans
+            ]
+
+            tp, fp, fn = compute_tp_fp_fn(pred_spans, gold_spans)
+            all_tp.update(tp)
+            all_fp.update(fp)
+            all_fn.update(fn)
+
         except ValueError as e:
             skipped += 1
             print(f"Skipping: {text[:50]}... - Error: {e}")
@@ -129,17 +157,41 @@ def evaluate_span_model(model_path, data_path, spans_key="sc"):
     print(f"- Span F1: {scores['spans_sc_f']:.3f}")
     print(f"- Span Precision: {scores['spans_sc_p']:.3f}")
     print(f"- Span Recall: {scores['spans_sc_r']:.3f}\n")
-    
-    print("Per-Category Performance:")
-    if 'spans_sc_per_type' in scores:
-        for label, metrics in scores["spans_sc_per_type"].items():
-            print(f"{label}:")
-            print(f"  Precision: {metrics['p']:.3f}")
-            print(f"  Recall: {metrics['r']:.3f}")
-            print(f"  F1: {metrics['f']:.3f}\n")
-            
+
+    print("Manual Span Evaluation:")
+    print(f"- True Positives: {len(all_tp)}")
+    print(f"- False Positives: {len(all_fp)}")
+    print(f"- False Negatives: {len(all_fn)}")
+
+    if len(all_tp) + len(all_fp) > 0:
+        precision = len(all_tp) / (len(all_tp) + len(all_fp))
     else:
-        print("No per-type metrics available. Check your evaluation data.")
+        precision = 0.0
+
+    if len(all_tp) + len(all_fn) > 0:
+        recall = len(all_tp) / (len(all_tp) + len(all_fn))
+    else:
+        recall = 0.0
+
+    if precision + recall > 0:
+        f1 = 2 * (precision * recall) / (precision + recall)
+    else:
+        f1 = 0.0
+
+    print(f"- Manual Precision: {precision:.3f}")
+    print(f"- Manual Recall: {recall:.3f}")
+    print(f"- Manual F1 Score: {f1:.3f}")
+    
+  #  print("Per-Category Performance:")
+  #  if 'spans_sc_per_type' in scores:
+   #     for label, metrics in scores["spans_sc_per_type"].items():
+   #         print(f"{label}:")
+  #        print(f"  Precision: {metrics['p']:.3f}")
+   #         print(f"  Recall: {metrics['r']:.3f}")
+    #        print(f"  F1: {metrics['f']:.3f}\n")
+            
+  #  else:
+     #   print("No per-type metrics available. Check your evaluation data.")
 
 if __name__ == "__main__":
     evaluate_span_model(

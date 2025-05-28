@@ -27,7 +27,7 @@ from difflib import SequenceMatcher
 from collections import defaultdict
 
 from ocr_ner_utils import (
-    extract_text_from_pdf,
+    extract_text_from_pdf,  
     extract_text_from_image_by_type,
     extract_info
 )

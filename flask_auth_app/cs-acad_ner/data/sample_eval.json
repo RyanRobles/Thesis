@@ -1,0 +1,37 @@
+[
+  {
+    "text": "GEOSPATIAL IDENTIFICATION OF POVERTY AREAS: MACHINE LEARNING APPROACH FOR DSWD IMUS\n2024\nROMMEL M. MACAPOBRE, NIRO S. REGALADO",
+    "spans": {
+      "sc": [
+        [0, 83, "TITLE"],
+        [84, 88, "DATE"],
+        [89, 108, "AUTHOR"],
+        [110, 127, "AUTHOR"]
+      ]
+    }
+  },
+  {
+    "text": "ENHANCING WORKFORCE MANAGEMENT: IMPLEMENTING A DATA ANALYTICS DRIVEN EMPLOYMENT SYSTEM FOR PESO IMUS\n2024\nABUT, RENZ MARK, ESPINEA, PAUL CHRISTIAN, NEBRES, JOHN MICHAEL",
+    "spans": {
+      "sc": [
+        [0, 100, "TITLE"],
+        [101, 105, "DATE"],
+        [106, 121, "AUTHOR"],
+        [123, 146, "AUTHOR"],
+        [148, 171, "AUTHOR"]
+      ]
+    }
+  },
+  {
+    "text": "ENHANCING VIRTUAL CONFERENCING: THE INTEGRATION OF GAMIFICATION IN AN INTERACTIVE 3D SPACE ENVIRONMENT\n2024\nCHARNELLE P. ESTRIBOR, FRANZ EMSLEY L. MANIBOG, KERCHEI C. PALEN",
+    "spans": {
+      "sc": [
+        [0, 102, "TITLE"],
+        [103, 107, "DATE"],
+        [108, 129, "AUTHOR"],
+        [131, 154, "AUTHOR"],
+        [156, 175, "AUTHOR"]
+      ]
+    }
+  }
+]

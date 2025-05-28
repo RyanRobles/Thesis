@@ -1127,5 +1127,266 @@
         { "start": 53, "end": 66, "label": "DATE" }
       ]
     }
+  },
+  {
+    "text": "JOHN ALCHRISTIAN M. BELARMINO EDILBERTO P. LUSTERIO JR RINOA JAYNE M. CATANAOAN JANUARY 2025",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 29,
+          "label": "AUTHOR"
+        },
+        {
+          "start": 30,
+          "end": 54,
+          "label": "AUTHOR"
+        },
+        {
+          "start": 55,
+          "end": 79,
+          "label": "AUTHOR"
+        },
+        {
+          "start": 80,
+          "end": 92,
+          "label": "DATE"
+        }
+      ]
+    }
+  },
+  {
+    "text": "MATCH HAVEN: A WEB PLATFORM DORMITORY ROOMMATE FINDER UTILIZING NATURAL LANGUAGE PROCESSING FOR TEXT-BASED TRAIT MATCHING",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 121,
+          "label": "TITLE"
+        }
+      ]
+    }
+  },
+  {
+    "text": "ALHAJZEM A. TUA JOHN LLOYD P. CENTENO JOHN B. RAZONADO JANUARY 2025",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 15,
+          "label": "AUTHOR"
+        },
+        {
+          "start": 16,
+          "end": 37,
+          "label": "AUTHOR"
+        },
+        {
+          "start": 38,
+          "end": 54,
+          "label": "AUTHOR"
+        },
+        {
+          "start": 55,
+          "end": 67,
+          "label": "DATE"
+        }
+      ]
+    }
+  },
+  {
+    "text": "INTEGRATING AI CHATBOT TO IMPROVE STUDENT SERVICES AT CAVITE STATE UNIVERSITY - IMUS CAMPUS",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 91,
+          "label": "TITLE"
+        }
+      ]
+    }
+  },
+  {
+    "text": "JOHNNY JR. S. DE ASIS  GABRIELLE DELA CERNA PAUL ELISHA ROSAL January 2025",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 22,
+          "label": "AUTHOR"
+        },
+        {
+          "start": 23,
+          "end": 43,
+          "label": "AUTHOR"
+        },
+        {
+          "start": 44,
+          "end": 61,
+          "label": "AUTHOR"
+        },
+        {
+          "start": 62,
+          "end": 74,
+          "label": "DATE"
+        }
+      ]
+    }
+  },
+  {
+    "text": "LEVERAGING MACHINE LEARNING FOR PRECISE AND EARLY DETECTION OF KIDNEY DISEASE",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 77,
+          "label": "TITLE"
+        }
+      ]
+    }
+  },
+  {
+    "text": "IMPLEMENTATION OF A PREDICTIVE SMART LIGHT CONTROL SYSTEM USING ARDUINO AND MOTION SENSORS",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 90,
+          "label": "TITLE"
+        }
+      ]
+    }
+  },
+  {
+    "text": "JANUARY 2023",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 12,
+          "label": "DATE"
+        }
+      ]
+    }
+  },
+  {
+    "text": "CATIPAY, ARISTON L.",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 19,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "RAMOS, HARVI M.",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 14,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "SILVA, JIESILLE M.",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 17,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "ROMMEL M. MACAPOBRE",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 18,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "CHARNELLE P. ESTRIBOR",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 21,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "KERCHE! C. PALEN",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 16,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "ANDRES, JOHN RYAN L",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 19,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "BERBASA, SHAUN PRINCE L",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 22,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "JOROLAN, VINCE LOUPER R",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 22,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "MATHEW AGUSTIN O, BELLA",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 23,
+          "label": "AUTHOR"
+        }
+      ]
+    }
   }
 ]

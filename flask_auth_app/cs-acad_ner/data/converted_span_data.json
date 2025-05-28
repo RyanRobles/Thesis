@@ -2908,7 +2908,126 @@
         { "start": 32, "end": 42, "label": "DATE" }
       ]
     }
+  },
+  {
+    "text": "CATIPAY, ARISTON L.",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 19,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "RAMOS, HARVI M.",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 14,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "SILVA, JIESILLE M.",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 17,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "ROMMEL M. MACAPOBRE",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 18,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "CHARNELLE P. ESTRIBOR",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 21,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "KERCHE! C. PALEN",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 16,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "ANDRES, JOHN RYAN L",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 19,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "BERBASA, SHAUN PRINCE L",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 22,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "JOROLAN, VINCE LOUPER R",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 22,
+          "label": "AUTHOR"
+        }
+      ]
+    }
+  },
+  {
+    "text": "MATHEW AGUSTIN O, BELLA",
+    "spans": {
+      "sc": [
+        {
+          "start": 0,
+          "end": 23,
+          "label": "AUTHOR"
+        }
+      ]
+    }
   }
-
  
 ]
